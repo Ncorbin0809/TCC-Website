@@ -1,0 +1,271 @@
+/*======Header=====*/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*Background for all pages*/
+
+#background {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 130vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/*Logo on all pages*/
+
+.tcc-logo-img-container {
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: auto;
+  text-align: center;
+}
+
+.tcc-logo-img {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/*Bernina authorized dealer logo*/
+
+.bdealer-img-container {
+  position: absolute;
+  top: 14%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: auto;
+  text-align: center;
+}
+
+.bernina-dealer-img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/*APQS logo*/
+
+.apqs-partner-img-container {
+  position: absolute;
+  top: 14%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: auto;
+  text-align: center;
+}
+
+.apqs2-logo-img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* navigation bar on all pages */
+nav {
+  &.primary-navigation {
+    margin: 0 auto;
+    display: block;
+
+    padding: 120px 0 0 0;
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    font-size: 16px;
+
+    ul li {
+      list-style: none;
+      margin: 0 auto;
+      border-left: 2px solid #3ca0e7;
+      display: inline-block;
+      padding: 0 30px;
+      position: relative;
+      text-decoration: none;
+      text-align: center;
+      font-family: arvo;
+    }
+
+    li a {
+      color: black;
+    }
+
+    li a:hover {
+      color: #3ca0e7;
+    }
+
+    li:hover {
+      cursor: pointer;
+    }
+
+    ul li ul {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      padding-left: 0;
+      left: 0;
+      display: none;
+      background: white;
+    }
+
+    ul li:hover > ul,
+    ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      min-width: 250px;
+      text-align: left;
+      padding-top: 20px;
+      box-shadow: 0px 3px 5px -1px #ccc;
+    }
+
+    ul li ul li {
+      clear: both;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+      border-style: none;
+    }
+
+    ul li ul li a:hover {
+      padding-left: 10px;
+      border-left: 2px solid #3ca0e7;
+      transition: all 0.3 ease;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: #3ca0e7;
+  }
+}
+
+ul li ul li a {
+  transition: all 0.5s ease;
+}
+
+/* Contact Us page */
+
+.contact-page-title {
+  position: absolute;
+  top: 350px;
+  width: 100%;
+  text-align: center;
+  left: 10px;
+  z-index: 5;
+
+  font-family: Arvo;
+  font-weight: normal;
+  font-size: 140%;
+  text-decoration: none;
+}
+
+/*Contact Us Page info*/
+
+#contact-us-phone {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 450px;
+  z-index: 5;
+
+  font-size: 140%;
+  font-family: Arvo;
+}
+
+#phone-link {
+  color: #3ca0e7;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#phone-link:hover {
+  color: #1c6fb8;
+  text-decoration: underline;
+}
+
+#contact-us-email {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 500px;
+  z-index: 5;
+
+  font-size: 140%;
+  font-family: Arvo;
+}
+
+#email-link {
+  color: #3ca0e7;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#email-link:hover {
+  color: #1c6fb8;
+  text-decoration: underline;
+}
+
+/*--About Us Page--*/
+
+#hours-of-operation {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 450px;
+  z-index: 5;
+
+  font-size: 150%;
+  font-family: Arvo;
+}
+
+/*--Long Arm Machines page--*/
+
+.apqs-img-container {
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.apqs-img {
+  max-width: 90%;
+  height: auto;
+}
+
+.apqs-info {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 350px;
+  left: 300px;
+  line-height: 3;
+  z-index: 5;
+
+  font-family: Arvo;
+  font-size: large;
+}
